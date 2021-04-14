@@ -1,7 +1,7 @@
 # shoppingList.github.io
 My first website with actions using javascript!
 
-This website was my first practice in successfully using javascript to manupulate the DOM (Document Object Model) and hence, modify the underlying html/css.
+This website was my first practice in successfully using javascript to alter the DOM (Document Object Model) and hence, modify the underlying html/css.
 
 The website offers a simple shopping list with some pre-added items. Users can perform the following actions on the list:
 1. Add more items in the shopping list by entering the iterm name in text field and either clicking the enter button or pressing the enter key.
