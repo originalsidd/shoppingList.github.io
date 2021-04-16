@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+    font-family: Poppins;
+}
+
+body {
+    min-height: 100vh;
+    width: 100%;
+
+    .container {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(45deg, #6c5ce7 50%, #e84393 50%);
+        color: white;
+
+        .content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 30px;
+
+            .upper {
+                margin-bottom: 20px;
+                font-size: 1.6rem;
+
+                p {
+                    margin-bottom: 5px;
+                }
+
+                input,
+                button {
+                    border-radius: 6px;
+                    border: none;
+                    padding: 5px 10px;
+                    font-size: 1.5rem;
+                }
+
+                button {
+                    color: white;
+                    background-color: #2ecc71;
+                    cursor: pointer;
+                }
+            }
+
+            ul {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                list-style: none;
+                margin-top: 40px;
+                padding: 10px 20px;
+
+                .field {
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 1.5rem;
+                    margin: 10px 0;
+
+                    button {
+                        background-color: #d63031;
+                        color: white;
+                        border-radius: 6px;
+                        border: none;
+                        padding: 5px 10px;
+                        font-size: 1.5rem;
+                        cursor: pointer;
+                    }
+                }
+
+                .done {
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}
+
+ul {
+    display: grid;
+    grid-template-columns: auto 10% 1fr;
+    justify-items: start;
+}
+
+
+.coolTitle {
+    text-align: center;
+    font-family: 'Oswald', Helvetica, sans-serif;
+    font-size: 40px;
+    transform: skewY(-10deg);
+    letter-spacing: 4px;
+    word-spacing: -8px;
+    color: tomato;
+    text-shadow:
+        -1px -1px 0 firebrick,
+        -2px -2px 0 firebrick,
+        -3px -3px 0 firebrick,
+        -4px -4px 0 firebrick,
+        -5px -5px 0 firebrick,
+        -6px -6px 0 firebrick,
+        -7px -7px 0 firebrick,
+        -8px -8px 0 firebrick,
+        -30px 20px 40px dimgrey;
+}
+
+li:hover {
+    cursor: pointer;
+}

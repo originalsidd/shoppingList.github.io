@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+  font-family: Poppins;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+body .container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #6c5ce7 50%, #e84393 50%);
+  color: white;
+}
+
+body .container .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 30px;
+}
+
+body .container .content .upper {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+body .container .content .upper p {
+  margin-bottom: 5px;
+}
+
+body .container .content .upper input,
+body .container .content .upper button {
+  border-radius: 6px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+}
+
+body .container .content .upper button {
+  color: white;
+  background-color: #2ecc71;
+  cursor: pointer;
+}
+
+body .container .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  margin-top: 40px;
+  padding: 10px 20px;
+}
+
+body .container .content ul .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+body .container .content ul .field button {
+  background-color: #d63031;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+body .container .content ul .done {
+  text-decoration: line-through;
+}
+
+ul {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 10% 1fr;
+      grid-template-columns: auto 10% 1fr;
+  justify-items: start;
+}
+
+.coolTitle {
+  text-align: center;
+  font-family: 'Oswald', Helvetica, sans-serif;
+  font-size: 40px;
+  -webkit-transform: skewY(-10deg);
+          transform: skewY(-10deg);
+  letter-spacing: 4px;
+  word-spacing: -8px;
+  color: tomato;
+  text-shadow: -1px -1px 0 firebrick, -2px -2px 0 firebrick, -3px -3px 0 firebrick, -4px -4px 0 firebrick, -5px -5px 0 firebrick, -6px -6px 0 firebrick, -7px -7px 0 firebrick, -8px -8px 0 firebrick, -30px 20px 40px dimgrey;
+}
+
+li:hover {
+  cursor: pointer;
+}
+/*# sourceMappingURL=styles.css.map */
