@@ -27,14 +27,23 @@ function createListElement() {
 	var li = document.createElement("li");
 	var div = document.createElement("div");
 	var delButton = document.createElement("button");
+
+	var field = document.createElement('div');
+	field.classList.add('field');
+
 	li.appendChild(document.createTextNode(input.value));
 	li.classList.add("this");
-	ul.appendChild(li);
+	field.appendChild(li);
+	
 	div.classList.add("gap");
-	ul.appendChild(div);
+	field.appendChild(div);
+	
 	delButton.appendChild(document.createTextNode("Delete"));
 	delButton.classList.add("del-li");
-	ul.append(delButton);
+	field.appendChild(delButton);
+
+	ul.appendChild(field);
+
 	input.value = "";
 	callit();
 	delit();

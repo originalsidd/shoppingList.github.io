@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:root {
+  font-size: 10px;
+  font-family: Poppins;
+}
+
+body {
+  min-height: 100vh;
+  width: 100%;
+}
+
+body .container {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(45deg, #6c5ce7 50%, #e84393 50%);
+  color: white;
+}
+
+body .container .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 30px;
+  min-height: 507px;
+}
+
+body .container .content .upper {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+body .container .content .upper p {
+  margin-bottom: 5px;
+}
+
+body .container .content .upper input,
+body .container .content .upper button {
+  border-radius: 6px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+}
+
+body .container .content .upper button {
+  color: white;
+  background-color: #2ecc71;
+  cursor: pointer;
+}
+
+body .container .content ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  list-style: none;
+  margin-top: 40px;
+  padding: 10px 20px;
+}
+
+body .container .content ul .field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+body .container .content ul .field button {
+  background-color: #d63031;
+  color: white;
+  border-radius: 6px;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+body .container .content ul .field li {
+  cursor: pointer;
+}
+
+body .container .content ul .done {
+  text-decoration: line-through;
+}
+
+@media only screen and (max-width: 650px) {
+  body .container .content .upper button {
+    margin-top: 15px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
