@@ -38,17 +38,9 @@ function createListElement() {
 	
 }
 
-function addListAfterClick() {
-	if (inputLength() > 0) {
-		createListElement();
-	}
-}
+const addListAfterClick = () => inputLength>0 ? createListElement : undefined;
 
-function addListAfterKeypress(event) {
-	if (inputLength() > 0 && event.keyCode === 13) {
-		createListElement();
-	}
-}
+const addListAfterKeypress = (event) => (inputLength() > 0 && event.keyCode === 13) ? createListElement() : undefined;
 
 button.addEventListener("click", addListAfterClick);
 input.addEventListener("keypress", addListAfterKeypress);
