@@ -2,9 +2,7 @@ var button = document.getElementById("enter");
 var input = document.getElementById("userinput");
 var ul = document.querySelector("ul");
 
-function inputLength() {
-	return input.value.length;
-}
+const inputLength = () => input.value.length;
 
 function check(event) {
 	var li2 = document.querySelectorAll(".this");
@@ -17,7 +15,6 @@ function deleteListElement(event) {
 	var divl = document.getElementsByClassName("gap");
 	var li3 = document.querySelectorAll(".this");
 	var index2 = Array.from(delButton).indexOf(event.target);
-	// console.log(li3[index2]);
 	li3[index2].parentNode.removeChild(li3[index2]);
 	delButton[index2].parentNode.removeChild(delButton[index2]);
 	divl[index2].parentNode.removeChild(divl[index2]);
